@@ -1,0 +1,215 @@
+---
+always_allow_html: yes
+output:
+  html_document:
+    fig_width: 7
+    number_sections: no
+    self_contained: yes
+  pdf_document: default
+  word_document: default
+editor_options: 
+  chunk_output_type: console
+---
+<head>
+```{css css_Styles, echo=FALSE}
+ <style> 
+    @media {
+  body {
+    width: 860px;
+    margin: auto;
+} 
+}
+@page {
+  size: Letter;
+  width: 860px;
+  height: 1050px;
+  margin: auto;
+}
+
+body { /* Normal  */
+  font-size: 14px;
+  font-family: "Cambria", sans-serif;
+  line-height: 15px ;
+  text-align: justify;
+}
+td {  /* Table  */
+  font-size: 10px;
+  font-family: "Cambria", sans-serif;
+  line-height: 12px;
+  text-align: center;
+}
+table {
+  padding-left: 10px;
+  padding-right: 10px;
+  min-width: 75%;
+  text-align:center;
+  margin: 0 auto;
+  }
+.title {
+  font-size: 12px;
+  font-family: "Cambria", sans-serif;
+  font-weight: bold;
+  font-variant: small-caps;
+  text-align: center;
+  padding: 96px;
+}
+h1 { /* Header 1 */
+  font-size: 16px;
+  font-family: "Cambria", sans-serif;
+  font-weight: bold;
+  font-variant: small-caps;
+  text-align: center;
+}
+h2 { /* Header 2 */
+  font-size: 16px;
+  font-family: "Cambria", sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  text-align: center;
+}
+h3 { /* Header 3 */
+  font-size: 14px;
+  font-family: "Cambria", sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  text-align: left;
+}
+h4 { /* Header 4 */
+  font-size: 13px;
+  font-family: "Cambria", sans-serif;
+  font-variant: small-caps;
+  text-align: left;
+}
+</style>
+```
+```{css css_Setup, echo=FALSE}
+ <script type="text/x-mathjax-config"> 
+    MathJax.Hub.Config({ 
+        "HTML-CSS": { scale: 100, linebreaks: { automatic: false } }, 
+        TeX: { equationNumbers: { autoNumber: "AMS" } }});
+</script>
+```
+
+</head>
+<body>
+<div class="header"  style="width:  775px; padding: 85px;">
+<h1>Open-Ready [Self-Contained]<br></h1>
+<h2>Diversité et impacts<br></h2>
+<h3>Xavier Lemyre</h3>
+<h4>Policy Research Group
+<br>26 mai 2020</h4>
+
+</div><br>
+<P style="page-break-after: always">
+
+<div style="border: 3px solid Gray; border-style: ridge; width: 775px; height: 1000px; padding: 85px; page-break-after: always">
+
+
+Remarque: ce document est conçu afin d’être accessible, interactif et reproductible. La recherche ici incluse représente les vues, perspectives et opinions de l’auteur seulement et à lui reviennent fautes ou omissions. 
+
+
+<br>
+
+Copyright © 2020
+<br>
+Open ◎ 2020 X
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+
+<br><br>
+
+
+</div><br>
+<div style="border: 3px solid Gray; border-style: ridge; width: 775px; height: 1000px; padding: 85px; page-break-after: always">
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Open-Ready [Self-Contained]
+
+<iframe
+    width="600"
+    height="300"
+    src="">
+</iframe>
+<br>
+
+```{r}
+is.R() #? #utf8
+```
+
+```{r, echo = FALSE}
+cat("THE SOFTWARE IS PROVIDED `AS IS`, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.")
+```
+
+
+```{r knitr_setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+#Packages used in this file:
+library(knitr)
+
+```
+
+</div><br>
+<div style="border: 3px solid Gray; border-style: ridge; width: 775px; height: 1000px; padding: 85px; page-break-after: always">
+
+
+# Diversity and Impact Measurement in Canada
+
+
+```{r Environment, echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE, paged.print=FALSE}
+rm(list = ls())
+I <- 1000
+M <- data.frame(W = c(1),
+                X = c((1:I)/I),
+                Y = c(1/2),
+                Z = c(0))
+L <- length(M$X)
+XL <- M$X * L
+z <- (-1)^(M$X*I)
+M.XL <- rbind(head(XL),tail(XL))
+M.XL
+plot(x = M$X, y = M$Y*z)
+```
+
+<iframe
+    width="150"
+    height="150"
+    src="">
+</iframe>
+
+
+
+</div><br>
+<div style="border: 3px solid Gray; border-style: ridge; width: 775px; height: 1000px; padding: 85px; page-break-after: always">
+
+
+# References
+```{r References, echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE, paged.print=FALSE}
+Ref <- matrix("", ncol = 5, nrow = 1, byrow = TRUE)
+#Ref <- c("", "", "", "", "")
+colnames(Ref) <- c("Author", "Year", "Title","Editors","pages")
+Ref <- rbind(Ref,c("", "", "", "", ""))
+Ref <- rbind(Ref,c("", "", "", "", ""))
+Ref <- rbind(Ref,c("", "", "", "", ""))
+Ref <- rbind(Ref,c("", "", "", "", ""))
+Ref <- rbind(Ref,c("", "", "", "", ""))
+Ref <- rbind(Ref,c("", "", "", "", ""))
+# Ref <- rbind(Ref,c("", "", "", "",""))``
+REFERENCES <- as.data.frame(Ref, row.names = NULL)
+REFERENCES
+```
+
+`r is.R() `
+
+
+</div><br>
+
+</body>
+</html>
