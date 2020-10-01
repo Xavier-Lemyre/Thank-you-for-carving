@@ -138,7 +138,7 @@ library(knitr)
 # Diversity and Impact Measurement
 
 
-```{r Environment, echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE, paged.print=FALSE}
+```{r Environment, dev='svg', echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE, paged.print=FALSE}
 rm(list = ls())
 I <- 1000
 M <- data.frame(W = c(1),
