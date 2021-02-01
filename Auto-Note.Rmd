@@ -6,8 +6,6 @@ output:
     fig_width: 7
     number_sections: no
     self_contained: yes
-  pdf_document: default
-  word_document: default
 editor_options: 
   chunk_output_type: console
 ---
@@ -28,7 +26,6 @@ editor_options:
   height: 1050px;
   margin: auto;
 }
-
 body { /* Normal  */
   font-size: 14px;
   font-family: "Cambria", sans-serif;
@@ -113,11 +110,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introduction
 
-<iframe
-    width="600"
-    height="300"
-    src="">
-</iframe>
+<iframe src="https://drive.google.com/file/d/1cdWGYopN4YWx489gmmXDkPU8geJiGmQ2/preview" width="600" height="380"></iframe>
+
 <br>
 
 ```{r}
@@ -128,7 +122,6 @@ is.R() #? #utf8
 knitr::opts_chunk$set(echo = FALSE)
 #Packages used in this file:
 library(knitr)
-
 ```
 
 </div><br>
@@ -152,13 +145,6 @@ M.XL <- rbind(head(XL),tail(XL))
 M.XL
 plot(x = M$X, y = M$Y*z)
 ```
-
-<iframe
-    width="150"
-    height="150"
-    src="https://drive.google.com/file/d/1cdWGYopN4YWx489gmmXDkPU8geJiGmQ2/preview">
-</iframe>
-
 
 
 </div><br>
